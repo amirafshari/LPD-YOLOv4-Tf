@@ -1,4 +1,4 @@
-# Tensorflow Implementation
+# Tensorflow Implementation for YOLOv4
 
 **1. I prefer to do these in command palette rather than jupyter, because we can see the results.**  
 **2. It's [recommended](https://github.com/hunglc007/tensorflow-yolov4-tflite#traning-your-own-model) to train your custom detector on [darknet](https://github.com/AlexeyAB/darknet), rather than this implemntation, and then convert your weights and use this implemntation.**
