@@ -8,7 +8,7 @@ I prefer to do these in cmd rather than jupyter, because we can see the results.
 
 ### Enviroment Setup
 
-#### Conda Enviroment
+#### Conda Environment
 
 
 ```python
@@ -44,7 +44,7 @@ I prefer to do these in cmd rather than jupyter, because we can see the results.
 !python --version
 ```
 
-#### Set the enviroment as jupyter kernel
+#### Set the environment as jupyter kernel
 
 
 ```python
