@@ -1,13 +1,16 @@
-I prefer to do these in cmd rather than jupyter, because we can see the results.
+# Tensorflow Implementation
+
+**1. I prefer to do these in command palette rather than jupyter, because we can see the results.**  
+**2. It's [recommended](https://github.com/hunglc007/tensorflow-yolov4-tflite#traning-your-own-model) to train your custom detector on [darknet](https://github.com/AlexeyAB/darknet), rather than this implemntation, and then convert your weights and use this implemntation.**
 
 
 ```python
 !git clone https://github.com/hunglc007/tensorflow-yolov4-tflite
 ```
 
-### Enviroment Setup
+## Environment Setup
 
-#### Conda Enviroment
+#### Conda Environment
 
 
 ```python
@@ -43,7 +46,7 @@ I prefer to do these in cmd rather than jupyter, because we can see the results.
 !python --version
 ```
 
-#### Set the enviroment as jupyter kernel
+#### Set the environment as jupyter kernel
 
 
 ```python
@@ -55,7 +58,9 @@ I prefer to do these in cmd rather than jupyter, because we can see the results.
 !python -m ipykernel install --user --name=yolov4tf
 ```
 
-### Darknet Setup
+Then choose yolov4tf from kernels in your notebook
+
+## YOLO Setup
 
 #### Convert weights
 
@@ -69,4 +74,16 @@ I prefer to do these in cmd rather than jupyter, because we can see the results.
 
 ```python
 !python detect.py --weights ./checkpoints/yolov4-416 --size 416 --model yolov4 --image ./data/kite.jpg
+```
+
+**If you are using a detector with other classes than yolo's, you need to do the following:**
+
+    1. Create a custom.names file in data/classes and type your class (based on your weights and training)
+    2. Call the custom.names in config.py (change coco.names to custom.names)
+    3. Change the paths in detect.py
+    
+
+
+```python
+!python detect.py --weights ./checkpoints/custom --size 416 --model yolov4 --image ./data/custom.jpg
 ```
