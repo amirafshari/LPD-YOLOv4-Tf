@@ -87,8 +87,8 @@ Then choose yolov4tf from kernels in your notebook
 ```python
 !python detect.py --weights ./checkpoints/custom --size 416 --model yolov4 --image ./data/custom.jpg
 ```
+![result](https://user-images.githubusercontent.com/17769927/134549864-703159d9-a8f2-41d0-b4ef-48e52bf770b9.jpg)
 
-<<<<<<< HEAD
 ## 3. Tflite
 #### Recommended for mobile and edge devices.
 
@@ -109,6 +109,5 @@ Then choose yolov4tf from kernels in your notebook
 ```python
 !python detect.py --weights ./checkpoints/yolov4-416.tflite --size 416 --model yolov4 --image ./data/kite.jpg --framework tflite
 ```
-=======
-![result](https://user-images.githubusercontent.com/17769927/134545795-ce4780a0-654b-4b99-8cf3-f97b54405cf1.png)
->>>>>>> 3c133e30cc408723f5c6d1be76d1fa71607bbadb
+![result-9](https://user-images.githubusercontent.com/17769927/134549834-da73a045-05c9-4d6c-8772-90c4dca67cf7.jpg)
+
