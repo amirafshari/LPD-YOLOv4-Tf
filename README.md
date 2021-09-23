@@ -78,9 +78,9 @@ Then choose yolov4tf from kernels in your notebook
 
 **If you are using a detector with other classes than yolo's, you need to do the following:**
 
-    1. Create a custom.names file in data/classes and type your class (based on your weights and training)
-    2. Call the custom.names in config.py (change coco.names to custom.names)
-    3. Change the paths in detect.py
+* 1. Create a custom.names file in data/classes and type your class (based on your weights and training)
+* 2. Call the custom.names in config.py (change coco.names to custom.names)
+* 3. Change the paths in detect.py
     
 
 
