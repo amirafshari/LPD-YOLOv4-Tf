@@ -87,3 +87,5 @@ Then choose yolov4tf from kernels in your notebook
 ```python
 !python detect.py --weights ./checkpoints/custom --size 416 --model yolov4 --image ./data/custom.jpg
 ```
+
+![result](https://user-images.githubusercontent.com/17769927/134545618-cabe568e-7c89-4f0c-8fa7-5c3501c364c9.png)
