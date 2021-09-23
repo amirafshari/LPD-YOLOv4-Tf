@@ -1,3 +1,5 @@
-
+core/
+checkpoints/
+data/
 .ipynb_checkpoints/YOLOv4Tensorflow2-checkpoint.ipynb
 .ipynb_checkpoints/YOLOv4Tensorflow2-checkpoint.ipynb
