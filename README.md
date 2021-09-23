@@ -8,7 +8,7 @@
 !git clone https://github.com/hunglc007/tensorflow-yolov4-tflite
 ```
 
-## Environment Setup
+## 1. Environment Setup
 
 #### Conda Environment
 
@@ -60,7 +60,7 @@
 
 Then choose yolov4tf from kernels in your notebook
 
-## YOLO Setup
+## 2. Tensorflow
 
 #### Convert weights
 
@@ -69,14 +69,14 @@ Then choose yolov4tf from kernels in your notebook
 !python save_model.py --weights ./data/yolov4.weights --output ./checkpoints/yolov4-416 --input_size 416 --model yolov4
 ```
 
-#### Demo
+#### Yolo Detector (COCO Dataset)
 
 
 ```python
 !python detect.py --weights ./checkpoints/yolov4-416 --size 416 --model yolov4 --image ./data/kite.jpg
 ```
 
-**If you are using a detector with other classes than yolo's, you need to do the following:**
+#### Custom Detector (Your Dataset)
 
 * 1. Create a custom.names file in data/classes and type your class (based on your weights and training)
 * 2. Call the custom.names in config.py (change coco.names to custom.names)
@@ -86,4 +86,25 @@ Then choose yolov4tf from kernels in your notebook
 
 ```python
 !python detect.py --weights ./checkpoints/custom --size 416 --model yolov4 --image ./data/custom.jpg
+```
+
+## 3. Tflite
+#### Recommended for mobile and edge devices.
+
+#### Convert
+
+
+```python
+# Save tf model for tflite converting
+!python save_model.py --weights ./data/yolov4.weights --output ./checkpoints/yolov4-416 --input_size 416 --model yolov4 --framework tflite
+
+# YOLOv4
+!python convert_tflite.py --weights ./checkpoints/yolov4-416 --output ./checkpoints/yolov4-416.tflite
+```
+
+#### Demo
+
+
+```python
+!python detect.py --weights ./checkpoints/yolov4-416.tflite --size 416 --model yolov4 --image ./data/kite.jpg --framework tflite
 ```

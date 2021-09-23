@@ -11,3 +11,5 @@ data/yolov4.weights
 result-int8.png
 result-int8.png
 data/1.png
+*.png
+*.jpg
