@@ -1,5 +1,10 @@
 I prefer to do these in cmd rather than jupyter, because we can see the results.
 
+
+```python
+!git clone https://github.com/hunglc007/tensorflow-yolov4-tflite
+```
+
 ### Enviroment Setup
 
 #### Conda Enviroment
