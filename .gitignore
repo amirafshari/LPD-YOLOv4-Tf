@@ -5,3 +5,8 @@ checkpoints/
 .ipynb_checkpoints/YOLOv4Tensorflow2-checkpoint.ipynb
 .ipynb_checkpoints/YOLOv4Tensorflow2-checkpoint.ipynb
 result-int8.png
+data/obj-last.weights
+data/custom-licence-plate.weights
+data/yolov4.weights
+result-int8.png
+result-int8.png
