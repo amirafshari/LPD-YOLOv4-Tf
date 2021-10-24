@@ -55,7 +55,7 @@
 
 
 ```python
-!python -m ipykernel install --user --name=yolov4tf
+!python -m ipykernel install --user --name=envname
 ```
 
 Then choose yolov4tf from kernels in your notebook
