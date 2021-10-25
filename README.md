@@ -252,3 +252,18 @@ Then choose yolov4tf from kernels in your notebook
 ```
 ![result-9](https://user-images.githubusercontent.com/17769927/134549834-da73a045-05c9-4d6c-8772-90c4dca67cf7.jpg)
 
+
+# Metrics
+
+*   Precision: 91 %
+*   Average Precision: 89.80 %
+*   Recall: 86 %
+*   F1-score: 88 %
+*   Average IoU: 74.06 %
+*   mAP@0.5: 89.80 %
+*   Confusion Matrix:
+    *   TP = 439
+    *   FP = 45
+    *   FN = 73
+    *   unique_truth_count (TP+FN) = 512
+    *   detections_count = 805
