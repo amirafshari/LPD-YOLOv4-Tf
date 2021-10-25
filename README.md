@@ -1,15 +1,3 @@
----
-slug: license-plate-detector
-title: Automatic License Plate Detector
-authors:
-  name: Amir Afshari
-  title: Machine Learning Engineer
-  url: https://github.com/amirafshari
-  image_url: https://avatars.githubusercontent.com/u/17769927?s=400&u=d630f608970a53d00295f2e87e88526b41b7d0b1&v=4
-tags: [Object Detection, Computer Vision, Deep Learning]
----
-
-
 ## Exploratory Data Analysis
 How our data looks like?  
 Annotations format (YOLO Format): [class, x_center, y_center, obj_width, obj_height]  
